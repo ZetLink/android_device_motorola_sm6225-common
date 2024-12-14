@@ -24,3 +24,4 @@ recovery_only(`
 
 allow init vendor_sysfs_battery_supply:file { open read getattr };
 allow init vendor_sysfs_usb_supply:file { open read getattr };
+allow init self:netlink_kobject_uevent_socket { read create bind getopt setopt };
