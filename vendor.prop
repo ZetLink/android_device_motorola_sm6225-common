@@ -96,12 +96,12 @@ ro.soc.manufacturer=QTI
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
-dalvik.vm.heapstartsize=8m
+dalvik.vm.heapstartsize=16m
 dalvik.vm.heapgrowthlimit=256m
 dalvik.vm.heapsize=512m
 dalvik.vm.heaptargetutilization=0.75
-dalvik.vm.heapminfree=1m
-dalvik.vm.heapmaxfree=8m
+dalvik.vm.heapminfree=8m
+dalvik.vm.heapmaxfree=32m
 
 # Display
 debug.sf.enable_hwc_vds=1
@@ -111,6 +111,7 @@ debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-5000000
 debug.sf.predict_hwc_composition_strategy=0
 persist.sys.sf.native_mode=1
+persist.sys.brightness.low.gamma=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
