@@ -21,3 +21,6 @@ recovery_only(`
   allow init self:capability sys_module;
   allow init rootfs:system module_load;
 ')
+
+allow init vendor_sysfs_battery_supply:file { open read getattr };
+allow init vendor_sysfs_usb_supply:file { open read getattr };
